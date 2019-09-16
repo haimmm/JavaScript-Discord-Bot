@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const token = 'NjIwNTk4NTM5NjM0MDgxNzkz.XXZJLg.2hgmY-z9840aiv6_NUuwIUOiwZk';
+const token = 'NjIwNTk4NTM5NjM0MDgxNzkz.XX_exA.v-NtBsE3Q_64a0EmgQ3z0g3h41w';
 const prefix = '!';
 //const ytdl = require("ytdL-core");
 const baladog = "219527193200427008";
