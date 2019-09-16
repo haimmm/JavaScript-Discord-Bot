@@ -13,6 +13,14 @@ bot.on('message', message=>{
     if(args[0] === 'join'){
         message.reply("i'm working");            
     }
+    
+    const channel = bot.channels.get("618149617464508431");
+    if (!channel) return console.error("The channel does not exist!");
+    channel.join().then(connection => {
+          message.reply("entered vc"); 
+    }).catch(e => {
+              console.error(e);
+    }); 
 }) 
 
 bot.login(process.env.BOT_TOKEN);
