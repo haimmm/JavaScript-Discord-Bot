@@ -17,7 +17,7 @@ bot.on('message', message=>{
         const channel = bot.channels.get("618149617464508431");
          if (!channel) return console.error("The channel does not exist!");
          channel.join().then(connection => {
-                 message.reply("entered vc"); 
+                 message.reply("inside vc"); 
          }).catch(e => {
                 console.error(e);
          }); 
