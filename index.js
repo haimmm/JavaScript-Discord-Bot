@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const token = 'NjIwNTk4NTM5NjM0MDgxNzkz.XX_exA.v-NtBsE3Q_64a0EmgQ3z0g3h41w';
+const token = 'NjIwNTk4NTM5NjM0MDgxNzkz.XYARew.w4pVqNyFPJLg_K-9MvY1uqUFVtc';
 const prefix = '!';
 //const ytdl = require("ytdL-core");
 const baladog = "219527193200427008";
@@ -12,15 +12,16 @@ bot.on('message', message=>{
 
     if(args[0] === 'join'){
         message.reply("i'm working");            
-    }
     
-    const channel = bot.channels.get("618149617464508431");
-    if (!channel) return console.error("The channel does not exist!");
-    channel.join().then(connection => {
-          message.reply("entered vc"); 
-    }).catch(e => {
-              console.error(e);
-    }); 
+    
+        const channel = bot.channels.get("618149617464508431");
+         if (!channel) return console.error("The channel does not exist!");
+         channel.join().then(connection => {
+                 message.reply("entered vc"); 
+         }).catch(e => {
+                console.error(e);
+         }); 
+    }
 }) 
 
 bot.login(process.env.BOT_TOKEN);
