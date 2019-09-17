@@ -49,7 +49,7 @@ bot.on('voiceStateUpdate', (oldMember, newMember) => {
             
             setTimeout(()=>{
                 delay.delete(baladog);
-            },120000) // 2H cd
+            },20000) // 2H cd
 
 
             }else if(newUserChannel === undefined){ // balagod leaves vc
