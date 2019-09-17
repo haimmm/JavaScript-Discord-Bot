@@ -3,8 +3,8 @@ const bot = new Discord.Client();
 const token = 'NjIwNTk4NTM5NjM0MDgxNzkz.XYC1bw.pGVbo8ye9pZJvnFZFIC71uldsSI';
 const prefix = '!';
 //const ytdl = require("ytdL-core"); // Play from YouTube (took it off, able to play a .mp3 file)
-//const baladog = "248887685282922506";
-const baladog = "219527193200427008"; // haim
+const baladog = "248887685282922506";
+//const baladog = "219527193200427008"; // haim
 const balabot = "620598539634081793";
 const delay = new Set();
 
@@ -50,7 +50,7 @@ bot.on('voiceStateUpdate', (oldMember, newMember) => {
             
             setTimeout(()=>{
                 delay.delete(baladog);
-            },20000) // 2H cd
+            },120000) // 2H cd
 
 
             }else if(newUserChannel === undefined){ // balagod leaves vc
