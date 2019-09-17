@@ -19,9 +19,9 @@
 
              channel.join().then(connection => {
                    message.reply("entered vc");
-                //   const dispatcher = connection.playFile('music.mp3'); // PLAY FROM LOCAL FILE
-                //  dispatcher.on("end", function(){
-                   //   connection.disconnect(); // DC AFTER
+                   const dispatcher = connection.playFile('music.mp3'); // PLAY FROM LOCAL FILE
+                  dispatcher.on("end", function(){
+                      connection.disconnect(); // DC AFTER
                   }); 
              }).catch(e => {
                   console.error(e);
