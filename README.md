@@ -1,7 +1,10 @@
 # balaBot
 Project name: balaBot (Discord bot)
+
 Language: node js
+
 Version: V1.0
+
 Author: H
 
 Introduction:
